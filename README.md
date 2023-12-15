@@ -8,5 +8,5 @@ $ pip3 install cryptocompare
 
 Use o 'btcbrl.py' da seguinte forma:
 ```
-$ python3 btcbrl.py 
+$ python3 btcbrl.py <brl_oferta> <%_premium_vendedor>
 ```
