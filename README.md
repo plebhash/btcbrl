@@ -10,3 +10,9 @@ Use o 'btcbrl.py' da seguinte forma:
 ```
 $ python3 btcbrl.py <brl_oferta> <%_premium_vendedor>
 ```
+
+## Rode com Docker
+
+```
+docker run --rm jaonoctus/btcbrl <brl_oferta> <%_premium_vendedor>
+```
