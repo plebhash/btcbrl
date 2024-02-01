@@ -13,10 +13,10 @@ btc_brl_premium = btc_brl * ((100.0 + premium) / 100.0 )
 btc_vendido = brl_oferta / btc_brl_premium
 sats_vendido = btc_vendido * 100_000_000
 
-print("Preço atual BTC/BRL: ", btc_brl)
+print("Preço atual BTC/BRL: ", format(btc_brl, ",.2f"))
 print("Premium do Vendedor: ", premium, "%")
-print("Preço atual BTC/BRL + Premium do Vendedor: ", btc_brl_premium)
-print("Oferta de compra em BRL:", brl_oferta)
+print("Preço atual BTC/BRL + Premium do Vendedor: ", format(btc_brl_premium, ",.2f"))
+print("Oferta de compra em BRL:", format(brl_oferta, ",.2f"))
 print("---")
-print("BTCs vendidos:", btc_vendido)
-print("sats vendidos: ", sats_vendido)
+print("BTCs vendidos:", format(btc_vendido, ",.8f"))
+print("sats vendidos: ", format(sats_vendido, ",.0f"))
