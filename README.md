@@ -15,6 +15,10 @@ Para converter de BTC para BRL:
 ```
 $ python3 btcbrl.py BTC <quantidade_btc> <%_premium_vendedor>
 ```
+Para converter de sats para BRL:
+```
+$ python3 btcbrl.py sats <quantidade_sats> <%_premium_vendedor>
+```
 Para exibir somente o preço atual:
 ```
 $ python3 btcbrl.py
