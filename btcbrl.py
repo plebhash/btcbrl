@@ -5,6 +5,21 @@ requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = "TLS13-CHACHA20-POLY1305-S
 
 btc_brl = cryptocompare.get_price('BTC','BRL')['BTC']['BRL']
 
+if len(sys.argv) < 2:
+    print("Preço atual BTC/BRL: ", format(btc_brl, ",.2f"))
+    sys.exit()
+
+if sys.argv[1].upper() == "BTC":
+    try:
+        premium = float(sys.argv[3])
+    except IndexError:
+        premium = 0
+    btc_brl_premium = btc_brl * ((100.0 + premium) / 100.0 )
+    print("Preço atual BTC/BRL: ", format(btc_brl, ",.2f"))
+    print("Preço atual BTC/BRL + Premium do Vendedor: ", format(btc_brl_premium, ",.2f"))
+    print(f"Preço atual BTC/BRL + Premium do Vendedor para {sys.argv[2]} BTC: ", format(btc_brl_premium*float(sys.argv[2]), ",.2f"))
+    sys.exit()
+
 brl_oferta = int(sys.argv[1])
 premium = float(sys.argv[2])
 
